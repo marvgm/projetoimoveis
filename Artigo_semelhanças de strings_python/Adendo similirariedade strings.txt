@@ -1,0 +1,12 @@
+Oi Renata, tudo bem?
+
+Nesse caso você poderia fazer interar sobre esses termos diferentes e aplicar o fuzzywuzzy em cada termo, por exemplo:
+termos = ['cardiovar','diabetes', 'diabet', 'fratura']
+termos_corretos = ['cardiovascular','diabetes','fratura']
+
+for a,b in zip(termos,termos_corretos):
+process.extract(a,b)
+
+Pensei em algo simples assim, talvez lhe ajude.
+
+Um Abraço.

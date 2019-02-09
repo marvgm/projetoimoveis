@@ -1,0 +1,6 @@
+def corrigir_nomes(nome):
+    nome = nome.replace('.', '').replace('ç', 'c').replace('ô', 'o').replace('é', 'e')
+    return nome
+E depois aplicar na coluna que deseja:
+
+df['NAME'] = df['NAME'].apply(corrigir_nomes)
